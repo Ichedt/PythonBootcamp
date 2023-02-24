@@ -12,7 +12,7 @@ if __name__ == "__main__":
     print("Welcome to the Tip Calculator.")
 
     print("What was the total bill?")
-    bill = int(input())
+    bill = float(input())
 
     print("What percentage tip would you like to give? 10, 12 or 15?")
     tip = int(input())
