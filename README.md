@@ -1,4 +1,4 @@
-# PythonBootcamp
+# Python Bootcamp
 100 days of Python challenges.
 
 - Day 1 - Band Name Generator;
