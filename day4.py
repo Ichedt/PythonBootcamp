@@ -1,4 +1,4 @@
-# Day 3 - Rock Paper Scissors
+# Day 4 - Rock Paper Scissors
 #
 # tags: randomisation, modules,  lists
 
