@@ -72,4 +72,4 @@ if __name__ == "__main__":
 
             password.append(symbol)
 
-    print("".join(password))
+    print(f"Your password is: {"".join(password)}")
