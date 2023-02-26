@@ -73,3 +73,6 @@ if __name__ == "__main__":
             password.append(symbol)
 
     print(f"Your password is: {"".join(password)}")
+
+    # NOTES
+    # Theres an easier version for mixing the characters inside a list, the function is shuffle(). However in the code is the "hard" way.
