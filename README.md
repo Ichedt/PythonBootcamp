@@ -8,3 +8,4 @@
 - Day 5 - Password Generator;
 - Day 6 - Escaping The Maze;
 - Day 7 - Hangman;
+- Day 8 - Caesar Cypher;
