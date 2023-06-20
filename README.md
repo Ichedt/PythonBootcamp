@@ -11,3 +11,4 @@
 - Day 7 - Hangman;
 - Day 8 - Caesar Cypher;
 - Day 9 - Auction Program;
+- Day 10 - Calculator
