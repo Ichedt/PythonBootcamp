@@ -9,7 +9,7 @@ def add(a, b):
 
 
 def sub(a, b):
-    """Substracts a number from the other."""
+    """Subtracts a number from the other."""
     return a - b
 
 
