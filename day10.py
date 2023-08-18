@@ -25,15 +25,34 @@ def div(a, b):
 
 operations = {"+": add, "-": sub, "*": mul, "/": div}
 
-a = int(input("What is the first number? "))
 
-for symbol in operations:
-    print(symbol)
-operation = input("Pick an operation from the above: ")
+def calculator():
+    """Calls for the calculation to be done."""
+    a = float(input("What is the first number? "))
 
-b = int(input("What is the second number? "))
+    for symbol in operations:
+        print(symbol)
 
-calculation = operations[operation]
-result = calculation(a, b)
+    should_continue = True
 
-print(f"{a} {operation} {b} = {result}")
+    while should_continue:
+        operation = input("Pick an operation: ")
+        b = float(input("What is the next number? "))
+        calculation = operations[operation]
+        result = calculation(a, b)
+
+        print(f"{a} {operation} {b} = {result}")
+
+        if (
+            input(
+                f"Type 'y' to contiunue calculating with {result}, or type 'c' to start a new calculation: "
+            )
+            == "y"
+        ):
+            a = result
+        else:
+            should_continue = False
+            calculator()
+
+
+calculator()
