@@ -13,3 +13,4 @@
 - Day 9 - Auction Program;
 - Day 10 - Calculator
 - Day 11 - Blackjack Game
+- Day 12 - Number Guessing Game
