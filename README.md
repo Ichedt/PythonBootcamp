@@ -14,3 +14,4 @@
 - Day 10 - Calculator
 - Day 11 - Blackjack Game
 - Day 12 - Number Guessing Game
+- Day 13 - Debugging
