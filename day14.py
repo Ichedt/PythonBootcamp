@@ -4,7 +4,7 @@
 import random
 import os
 
-# ART
+# ARTS
 logo = """
     __  ___       __             
    / / / (_)___ _/ /_  ___  _____
@@ -16,7 +16,6 @@ logo = """
  / /___/ /_/ / |/ |/ /  __/ /    
 /_____/\____/|__/|__/\___/_/     
 """
-
 vs = """
  _    __    
 | |  / /____
@@ -333,3 +332,69 @@ data = [
 def clear_console():
     """Clears the console log."""
     os.system("cls")
+
+
+def get_random_account():
+    """Get data from random account."""
+    return random.choice(data)
+
+
+def format_data(account):
+    """Takes the account data and returns the user-friendly format."""
+    account_name = account["name"]
+    account_description = account["description"]
+    account_country = account["country"]
+    return f"{account_name}, a {account_description}, from {account_country}"
+
+
+def check_answer(guess, a_followers, b_followers):
+    """Takes the user guess and follower counts and returns if they got it right."""
+    # If A has more followers, return True, if B has more followers, return False
+    if a_followers > b_followers:
+        return guess == "A"
+    else:
+        return guess == "B"
+
+
+# Display art
+print(logo)
+
+score = 0
+game_continues = True
+# Choose a random account from the data
+account_a = get_random_account()
+account_b = get_random_account()
+
+# Make the game repeatable
+while game_continues:
+    # Making account B become the next account A for continuity
+    account_a = account_b
+    account_b = get_random_account()
+    # Making sure they're different accounts
+    while account_a == account_b:
+        account_b = get_random_account()
+
+    print(f"Compare A: {format_data(account_a)}.")
+    print(vs)
+    print(f"Against B: {format_data(account_b)}.")
+
+    # Ask the user for a guess
+    guess = input("Who has more followers? Type [A] or [B]: ").upper()
+
+    # Check if user is correct
+    ## Get follower count of each account
+    a_follower_count = account_a["follower_count"]
+    b_follower_count = account_b["follower_count"]
+    is_correct = check_answer(guess, a_follower_count, b_follower_count)
+
+    # Clear the console
+    clear_console()
+    print(logo)
+
+    # Give user the feedback on their guess
+    if is_correct:
+        score += 1
+        print(f"You're right! Current score: {score}.\n")
+    else:
+        print(f"Wrong answer! Final score: {score}.\n")
+        game_continues = False
