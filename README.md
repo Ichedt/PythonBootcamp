@@ -16,3 +16,4 @@
 - Day 12 - Number Guessing Game
 - Day 13 - Debugging
 - Day 14 - Higher Lower Game
+- Day 15 - Coffee Machine Project
