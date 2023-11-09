@@ -11,9 +11,10 @@
 - Day 7 - Hangman;
 - Day 8 - Caesar Cypher;
 - Day 9 - Auction Program;
-- Day 10 - Calculator
-- Day 11 - Blackjack Game
-- Day 12 - Number Guessing Game
-- Day 13 - Debugging
-- Day 14 - Higher Lower Game
-- Day 15 - Coffee Machine Project
+- Day 10 - Calculator;
+- Day 11 - Blackjack Game;
+- Day 12 - Number Guessing Game;
+- Day 13 - Debugging;
+- Day 14 - Higher Lower Game;
+- Day 15 - Coffee Machine Project;
+- Day 16 - Coffee Machine (OOP);
