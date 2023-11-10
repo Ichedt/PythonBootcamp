@@ -68,7 +68,7 @@ def make_coffee(drink_name, order_ingredients):
     """Updates the resourses based on the order."""
     for item in order_ingredients:
         resources[item] -= order_ingredients[item]
-    print(f"Here is your {drink_name} ☕")
+    print(f"Here is your {drink_name}! ☕")
 
 
 resources = {
