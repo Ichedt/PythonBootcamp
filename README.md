@@ -18,3 +18,5 @@
 - Day 14 - Higher Lower Game;
 - Day 15 - Coffee Machine Project;
 - Day 16 - Coffee Machine (OOP);
+- Day 17 - Quiz Game;
+- Day 18 - The Hirst Painting;
