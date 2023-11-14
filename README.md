@@ -20,4 +20,4 @@
 - Day 16 - Coffee Machine (OOP);
 - Day 17 - Quiz Game;
 - Day 18 - The Hirst Painting;
-- Day 19 - Etch-A-Sketch;
+- Day 19 - Turtle Race;
