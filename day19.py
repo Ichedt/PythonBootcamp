@@ -4,45 +4,44 @@ Day 19 - Turtle Race
 tags: turtle, event listener, state, instance
 """
 from turtle import Turtle, Screen
+import random
 
-t = Turtle()
+# Setting up screen and asking user choice
 screen = Screen()
+screen.setup(width=500, height=400)
+user_choice = screen.textinput(
+    title="Choose your winner!",
+    prompt="Which turtle will win the race? Enter a color (violet, indigo,"
+    "blue, green, yellow, orange, red):",
+)
 
+colors = ["purple", "indigo", "blue", "green", "yellow", "orange", "red"]
+y_positions = [120, 80, 40, 0, -40, -80, -120]
+all_turtles = []
+is_race_on = False
 
-def move_forwards():
-    """Moves the turtle forwards."""
-    t.forward(10)
+# Positioning the turtles to the left of the window
+for turtle_index in range(0, 7):
+    turtle = Turtle(shape="turtle")
+    turtle.color(colors[turtle_index])
+    turtle.penup()
+    turtle.goto(x=-200, y=y_positions[turtle_index])
+    all_turtles.append(turtle)
 
+if user_choice:
+    is_race_on = True
 
-def move_backwards():
-    """Moves the turtle backwards."""
-    t.backward(10)
+while is_race_on:
+    for turtle in all_turtles:
+        if turtle.xcor() > 230:
+            is_race_on = False
+            winner_color = turtle.pencolor()
+            if winner_color == user_choice:
+                print(f"You've won! The {winner_color} turtle is the winner!")
+            else:
+                print(f"You've lost! The {winner_color} turtle is the winner!")
 
+        random_distance = random.randint(0, 10)
+        turtle.forward(random_distance)
 
-def turn_left():
-    """Turns the turtle to the left."""
-    new_heading = t.heading() + 10
-    t.setheading = new_heading
-
-
-def turn_right():
-    """Turns the turtle to the right."""
-    new_heading = t.heading() - 10
-    t.setheading = new_heading
-
-
-def clear_screen():
-    """Clears the screen."""
-    t.clear()
-    t.penup()
-    t.home()
-    t.pendown()
-
-
-screen.listen()
-screen.onkey(move_forwards, "w")
-screen.onkey(move_backwards, "s")
-screen.onkey(turn_left, "a")
-screen.onkey(turn_right, "d")
-screen.onkey(clear_screen, "c")
 screen.exitonclick()

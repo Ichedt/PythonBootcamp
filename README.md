@@ -21,3 +21,5 @@
 - Day 17 - Quiz Game;
 - Day 18 - The Hirst Painting;
 - Day 19 - Turtle Race;
+- Day 20 - Snake Game;
+- Day 21 - Snake Game (continuation);
