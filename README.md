@@ -25,3 +25,6 @@
 - Day 21 - Snake Game (continuation);
 - Day 22 - Ping-Pong;
 - Day 23 - Turtle Crossing Game;
+- Day 24 - Mail Merge Project;
+- Day 25 - Brazil States Game;
+- Day 26 - NATO Alphabet Project;
