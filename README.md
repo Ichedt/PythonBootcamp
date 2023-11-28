@@ -1,6 +1,6 @@
 # Python Bootcamp
 
-100 days of Python challenges.
+100 days of Python projects.
 
 - Day 1 - Band Name Generator;
 - Day 2 - Tip Calculator;
@@ -28,3 +28,4 @@
 - Day 24 - Mail Merge Project;
 - Day 25 - Brazil States Game;
 - Day 26 - NATO Alphabet Project;
+- Day 27 - Distance Converter;
