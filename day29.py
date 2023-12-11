@@ -10,6 +10,8 @@ import random
 
 # Password Generator
 def password_generator():
+    """Generate a random password."""
+
     letters = [
         "a",
         "b",
