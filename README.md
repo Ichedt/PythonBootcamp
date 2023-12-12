@@ -33,3 +33,4 @@
 - Day 29 - Password Manager;
 - Day 30 - Password Manager (Improved);
 - Day 31 - Flash Card Program;
+- Day 32 - Automated Birthday Wisher;
