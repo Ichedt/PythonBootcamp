@@ -36,3 +36,6 @@
 - Day 32 - Automated Birthday Wisher;
 - Day 33 - ISS Tracker;
 - Day 34 - The Quizzler App;
+- Day 35 - Rain Alert App;
+- Day 36 - Stock News Monitoring Project;
+- Day 37 - Habit Tracker;
