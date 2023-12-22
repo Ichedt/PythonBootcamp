@@ -39,3 +39,4 @@
 - Day 35 - Rain Alert App;
 - Day 36 - Stock News Monitoring Project;
 - Day 37 - Habit Tracker;
+- Day 38 - Exercise Tracking with Sheets;
