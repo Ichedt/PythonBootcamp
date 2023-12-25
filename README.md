@@ -40,3 +40,5 @@
 - Day 36 - Stock News Monitoring Project;
 - Day 37 - Habit Tracker;
 - Day 38 - Exercise Tracking with Sheets;
+- Day 39 - Cheap Flight Finder;
+- Day 40 - Cheap Flight Finder (continuation);

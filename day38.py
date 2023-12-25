@@ -16,13 +16,15 @@ WEIGHT = 65
 HEIGHT = 174
 AGE = 22
 NUTRITIONIX_EXERCISE_ENDPOINT = "https://trackapi.nutritionix.com/v2/natural/exercise"
-headers = {
+nutritionix_headers = {
     "x-app-id": os.getenv("NUTRITIONIX_APP_ID"),
     "x-app-key": os.getenv("NUTRITIONIX_API_KEY"),
 }
 # Sheety constants
-SHEETY_GET = os.getenv("SHEETY_WORKOUTS_GET")
-SHEETY_POST = os.getenv("SHEETY_WORKOUTS_POST")
+SHEETY_ENDPOINT = os.getenv("SHEETY_MYWORKOUTS_ENDPOINT")
+sheety_headers = {
+    "Authorization": f"Bearer {os.getenv("SHEETY_MYWORKOUTS_TOKEN")}"
+}
 
 # Nutritionix post exercise
 exercise_text = input("Which exercises you did?: ")
@@ -34,7 +36,7 @@ exercise_params = {
     "age": AGE,
 }
 response = requests.post(
-    NUTRITIONIX_EXERCISE_ENDPOINT, json=exercise_params, headers=headers, timeout=10
+    NUTRITIONIX_EXERCISE_ENDPOINT, json=exercise_params, headers=nutritionix_headers, timeout=10
 )
 result = response.json()
 
@@ -51,5 +53,10 @@ for exercise in result["exercises"]:
             "calories": exercise["nf_calories"],
         }
     }
-sheet_response = requests.post(SHEETY_GET, json=sheet_inputs, timeout=10)
+sheet_response = requests.post(
+    SHEETY_ENDPOINT,
+    json=sheet_inputs,
+    headers=sheety_headers,
+    timeout=10,
+)
 print(sheet_response.text)
