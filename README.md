@@ -42,3 +42,8 @@
 - Day 38 - Exercise Tracking with Sheets;
 - Day 39 - Cheap Flight Finder;
 - Day 40 - Cheap Flight Finder (continuation);
+- Day 41 - WEB (Introduction to HTML);
+- Day 42 - WEB (Intermediate HTML);
+- Day 43 - WEB (Introduction to CSS);
+- Day 44 - WEB (Intermediate CSS);
+- Day 45 - Top 100 Movies using Web Scraping;
