@@ -1,7 +1,7 @@
 """
 Day 46 - Musical Time Machine
 
-tags: beautiful soup, spotify API
+tags: beautiful soup, web scraping
 """
 from bs4 import BeautifulSoup
 import requests

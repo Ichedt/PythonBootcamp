@@ -1,5 +1,5 @@
 """
 Day 47 - Amazon Price Tracker
 
-tags: beautiful soup,
+tags: beautiful soup, web scraping
 """
