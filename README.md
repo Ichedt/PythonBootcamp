@@ -49,3 +49,4 @@
 - Day 45 - Top 100 Movies using Web Scraping;
 - Day 46 - Musical Time Machine;
 - Day 47 - Amazon Price Tracker;
+- Day 48 - Automatic Cookie Clicker;

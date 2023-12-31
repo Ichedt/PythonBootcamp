@@ -16,3 +16,6 @@ response = requests.get(
 soup = BeautifulSoup(response.text, "html.parser")
 song_names_spans = soup.select("li ul li h3")
 song_names = [song.getText().strip() for song in song_names_spans]
+
+# The "save to playlist on Spotify" part isn't really necessary so I'll be
+# avoiding using personal info for coding.
