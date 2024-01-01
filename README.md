@@ -50,3 +50,6 @@
 - Day 46 - Musical Time Machine;
 - Day 47 - Amazon Price Tracker;
 - Day 48 - Automatic Cookie Clicker;
+- Day 49 - Automated Job Applications;
+- Day 50 - Auto Tinder Bot;
+- Day 51 - Complaining Twitter Bot;
