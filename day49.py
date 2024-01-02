@@ -26,7 +26,7 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get(URL)
 
 
-def abort_application():
+def abort_application() -> None:
     """Cancel the application if it's multi-step or too complex."""
     # Click Close button
     close_button = driver.find_element(By.CLASS_NAME, value="artdeco-modal__dismiss")
@@ -40,7 +40,7 @@ def abort_application():
     discard_button.click()
 
 
-def main():
+def main() -> None:
     """Run the main code."""
     # Click Reject Cookies button
     time.sleep(2)

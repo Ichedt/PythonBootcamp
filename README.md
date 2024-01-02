@@ -53,3 +53,5 @@
 - Day 49 - Automated Job Applications;
 - Day 50 - Auto Tinder Bot;
 - Day 51 - Complaining Twitter Bot;
+- Day 52 - Instagram Follower Bot;
+- Day 53 - Data Entry Job Automation;

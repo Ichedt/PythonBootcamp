@@ -19,13 +19,13 @@ TWITTER_PASSWORD = "password"
 class InternetSpeedTwitterBot:
     """Manage the bot and its functionalities."""
 
-    def __init__(self, driver_path):
+    def __init__(self, driver_path: str):
         """Initialize the required attributes."""
         self.driver = webdriver.Chrome(service=Service(driver_path))
         self.down = 0
         self.up = 0
 
-    def get_internet_speed(self):
+    def get_internet_speed(self) -> None:
         """Go to the SpeedTest website and get the internet speed."""
         self.driver.get("https://www.speedtest.net/")
 
@@ -42,7 +42,7 @@ class InternetSpeedTwitterBot:
             value='//*[@id="container"]/div/div[3]/div/div/div/div[2]/div[3]/div[3]/div/div[3]/div/div/div[2]/div[1]/div[3]/div/div[2]/span',
         ).text
 
-    def tweet_at_provider(self):
+    def tweet_at_provider(self) -> None:
         """Go to Twitter and make a tweet complaining about the internet speed."""
         self.driver.get("https://twitter.com/login")
 
@@ -76,7 +76,7 @@ class InternetSpeedTwitterBot:
         self.driver.quit()
 
 
-def main():
+def main() -> None:
     """Run the main code."""
     bot = InternetSpeedTwitterBot(CHROME_PATH)
     bot.get_internet_speed()
