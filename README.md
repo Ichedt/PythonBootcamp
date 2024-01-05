@@ -55,3 +55,4 @@
 - Day 51 - Complaining Twitter Bot;
 - Day 52 - Instagram Follower Bot;
 - Day 53 - Data Entry Job Automation;
+- Day 54 - Web Development with Flask;
