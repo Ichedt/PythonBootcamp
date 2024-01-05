@@ -56,3 +56,5 @@
 - Day 52 - Instagram Follower Bot;
 - Day 53 - Data Entry Job Automation;
 - Day 54 - Web Development with Flask;
+- Day 55 - Guess The Number Website;
+- Day 56 - Personal Website;
