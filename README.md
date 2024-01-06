@@ -58,3 +58,4 @@
 - Day 54 - Web Development with Flask;
 - Day 55 - Guess The Number Website;
 - Day 56 - Personal Website;
+- Day 57 - Blog Website;
