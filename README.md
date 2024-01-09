@@ -59,3 +59,5 @@
 - Day 55 - Guess The Number Website;
 - Day 56 - Personal Website;
 - Day 57 - Blog Website;
+- Day 58 - WEB (Bootstrap);
+- Day 59 - Blog Website (Improved);
