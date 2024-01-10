@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Flask Form</h1>
+    <form action="{{ url_for('log_in') }}" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="username" />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+      <input type="checkbox" id="showPassword" onclick="togglePassword()" />
+      <label for="showPassword">Show password</label>
+      <br />
+      <input type="submit" value="OK" />
+    </form>
+    <script>
+      function togglePassword() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

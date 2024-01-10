@@ -61,3 +61,5 @@
 - Day 57 - Blog Website;
 - Day 58 - WEB (Bootstrap);
 - Day 59 - Blog Website (Improved);
+- Day 60 - Flask Forms;
+- Day 61 - Flask Forms (Improved);
