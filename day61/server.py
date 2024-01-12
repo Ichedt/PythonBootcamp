@@ -1,4 +1,4 @@
-"""Code responsible for run the Flask server."""
+"""Code responsible for running the Flask server."""
 from flask import Flask, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField

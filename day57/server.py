@@ -1,4 +1,4 @@
-"""Code responsible for run the Flask server."""
+"""Code responsible for running the Flask server."""
 import datetime as dt
 import requests
 from flask import Flask, render_template
