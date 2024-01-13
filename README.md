@@ -65,3 +65,6 @@
 - Day 61 - Flask Forms (Improved);
 - Day 62 - Coffee Wiki;
 - Day 63 - Virtual Bookshelf;
+- Day 64 - Top Movies Website;
+- Day 65 - WEB (Design Principles);
+- Day 66 - REST API with Flask;
