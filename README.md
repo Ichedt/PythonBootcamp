@@ -68,3 +68,5 @@
 - Day 64 - Top Movies Website;
 - Day 65 - WEB (Design Principles);
 - Day 66 - REST API with Flask;
+- Day 67 - Blog Website (Improved+);
+- Day 68 - Authentication with Flask;
