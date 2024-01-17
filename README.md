@@ -70,3 +70,5 @@
 - Day 66 - REST API with Flask;
 - Day 67 - Blog Website (Improved+);
 - Day 68 - Authentication with Flask;
+- Day 69 - Blog Website (Improved++);
+- Day 70 - Git, Github and Version Control;
