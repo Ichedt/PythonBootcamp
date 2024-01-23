@@ -74,3 +74,5 @@
 - Day 70 - Git, Github and Version Control;
 - Day 71 - Deploy Blog Website;
 - Day 72 - Post-University Salaries Analysis;
+- Day 73 - Programming Languages Popularity Analysis;
+- Day 74 - LEGO Pieces Analysis;
